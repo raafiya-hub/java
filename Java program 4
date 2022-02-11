@@ -1,0 +1,21 @@
+import java.util.*;
+ // Compiler version JDK 11.0.2
+
+  public class greatest
+ {
+   public static void main(String args[])
+   { 
+    int a=50, b=70 , c= 90;
+    if (a>b && a>c)
+    {
+    System.out.println(" a is the  greatest number among three numbers");
+    } else if (b>a && b>c)
+    {
+    System.out.println (" b is the  greatest number among three number");
+    } else if (c>a && c>b)
+    {
+      System.out.println("c is the  greatest number among three numbers");
+    } else 
+      System.out.println ("a=b=c");
+   }
+ }
