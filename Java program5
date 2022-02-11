@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class greatest
+{
+  public static void main (String args [])
+  {
+    Scanner input = new Scanner (System.in);
+    System.out.println("Enter num 1");
+    int num1=input.nextInt();
+    System.out.println("Enter num2");
+    int num2=input.nextInt();
+    System.out.println("Enter num3");
+    int num3=input.nextInt();
+    int maximum=Math.max(num1,num2);
+    int result=Math.max(maximum,num3);
+    
+    if (result==num1)
+    {
+      System.out.println("num1 is the greatest number ");
+   
+     } else if (result==num2){
+       System.out.println("num2 is the greatest number ");
+     } else if (result==num3){
+       System.out.println("num3 is the greatest number");
+     } else {
+       System.out.println("num1=num2=num3");
+     }
+  }
+}
