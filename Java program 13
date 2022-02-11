@@ -1,0 +1,15 @@
+import java.util.*;
+
+ // Compiler version JDK 11.0.2
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    Scanner input =new Scanner (System.in);
+    System.out.println("Enter binary number :");
+    String binarystring=input.nextLine();
+    System.out.print("output : "+Integer.parseInt(binarystring,2));
+    
+    }
+    }
