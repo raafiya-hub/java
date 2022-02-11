@@ -1,0 +1,29 @@
+import java.util.*;
+
+ // Compiler version JDK 11.0.2
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    Scanner input= new Scanner (System.in);
+    System.out.println("Enter value of a");
+    double a=input.nextDouble();
+    System.out.println("Enter value of  b");
+    double b=input.nextDouble();
+    System.out.println("Enter value of c");
+    double c=input.nextDouble();
+    double d=Math.sqrt(b*b-4*a*c);
+    // d is determinant of quadratic equation
+    
+    if ((d>0) || (d==0))
+    {
+      double  root1=(-b+d)/(2*a);
+      double  root2=(-b-d)/(2*a);
+     System.out.println(" roots of given quadratic equation  are :"+ root1 + "and\n" + root2);
+    } else 
+    {
+      System.out.print("roots of given quadratic equation are imaginary");
+     }
+}
+}
