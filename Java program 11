@@ -1,0 +1,40 @@
+import java.util.*;
+
+ // Compiler version JDK 11.0.2
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+     Scanner reader= new Scanner (System.in);
+   System.out.println("Enter an octal number : ");
+   int octal =reader.nextInt();
+   long binary =octalToBinary(octal);
+   System.out.println("The binary value of an octal number: "+octal +" is \n"+binary);
+  }
+   public static long octalToBinary(int octalNumber)
+   {
+     //convert octal to decimal 
+     int decimalnumber=0,i=0;
+     long binaryNumber=0;
+     while (octalNumber!=0)
+     {
+       int remainder=octalNumber%10;
+       decimalnumber=decimalnumber+remainder*(int)Math.pow(8,i);
+     i++;
+     octalNumber=octalNumber/10;
+     }
+     i=1; 
+     // decimal to binary 
+     while(decimalnumber!=0)
+     {
+       int remainder=decimalnumber%2;
+       binaryNumber=binaryNumber+remainder*i;
+       i=i*10;
+       decimalnumber=decimalnumber/2;
+     }
+      return binaryNumber;
+   }  
+ 
+  
+   }
