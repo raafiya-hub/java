@@ -1,0 +1,34 @@
+import java.util.*;
+
+ // Compiler version JDK 11.0.2
+
+ class mathematic
+ {
+   public static void main(String args[])
+   { 
+    Scanner input= new Scanner (System.in);
+    
+    System.out.println ("Enter num1");
+    int num1=input.nextInt();
+    System.out.println("Enter num2");
+    int num2=input.nextInt();
+    System.out.println("Enter num3");
+    int num3=input.nextInt();
+    int minimum=Math.min(num1,num2);
+    int result =Math.min(minimum,num3);
+    
+   if (result ==num1)
+    {
+     System.out.println("num1 is the smallest number");
+    } else if ( result ==num2)
+    {
+      System.out.println("num2 is the smallest number");
+     } else if (result == num3)
+     {
+       System.out.println("num3 is the smallest number");
+      } else 
+      {
+        System.out.println("num1=num2=num3");
+      }
+   }
+ }
