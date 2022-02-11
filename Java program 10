@@ -1,0 +1,15 @@
+import java.util.*;
+
+ // Compiler version JDK 11.0.2
+
+ class conversion
+ {
+   public static void main(String args[])
+   { 
+    Scanner a=new Scanner (System.in);
+    System.out.println("Enter Decimal number:");
+    int b=a.nextInt();
+    String c=Integer.toBinaryString(b);
+    System.out.println("Binary number is :"+c);
+   }
+ }
