@@ -1,0 +1,39 @@
+import java.util.*;
+
+ // Compiler version JDK 11.0.2
+
+ public class Arithmetic 
+ {
+   public static void main(String args[])
+   { 
+    Scanner input  = new Scanner (System.in);
+    System.out.println ("Enter first number");
+    int a=input.nextInt();
+    System.out.println(input);
+    
+    System.out.println("Enter second number");
+    int b=input.nextInt();
+    int add=a+b;
+    int sub=a-b;
+    int mul=a*b;
+    int div=a/b;
+    int mod=a%b;
+    int inc=++a;
+    int dec=--a;
+    System.out.println(" Addition  of first number and second number\n"+add);
+    System.out.println(" Subtraction of first number and second number\n"+sub);
+   
+    System.out.println("Multiplication of firstt number and second number\n"+mul);
+    
+    System.out.println("Division of first number and second number\n"+div);  
+    System.out.println("Module(remainder)  first number and second num is\n "+mod);
+     
+    System.out.println("Increment of first number\n"+inc);
+    
+    
+    System.out.println("Decrement of first number\n"+ dec);
+  
+   
+   }
+   
+ }
